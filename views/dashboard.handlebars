@@ -1,0 +1,36 @@
+<section class="hero is-fullheight">
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">
+      Dashboard
+    </h2>
+
+{{#if posts.length}}
+  {{#each posts as |post|}}
+     
+    <div class="row bg-primary text-white pt-3 rounded-top">
+      <div class="feature col-6 d-flex align-items-end">
+        <h2>
+          {{post.title}}
+        </h2>
+      </div>
+      <div class="col-5 d-flex justify-content-end align-items-end">
+        <h6 class="post-info" data-Date="{{post.date_created}}">
+      </div>
+      <div class="col-1 d-flex justify-content-end">
+        <a data-postId="{{post.posts.id}}" class="edit-post" href="#">
+          <i class="far fa-edit fa-2x"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="row border border-secondary border-2 p-4">
+      <p>
+        {{post.content}}
+      </p>
+    </div>
+    
+    <div class="divider"></div>
+  {{/each}}
+{{/if}}
+  </div>
+</section>
