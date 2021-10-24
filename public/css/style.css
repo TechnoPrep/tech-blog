@@ -1,0 +1,8 @@
+.divider {
+  height: 3rem;
+}
+
+.fa-edit::before {
+  padding-right: 10px;
+  color: #fff;
+}
