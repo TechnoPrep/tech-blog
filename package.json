@@ -1,5 +1,5 @@
 {
-  "name": "crowd-funding",
+  "name": "techblog",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,9 +8,6 @@
     "start": "node server.js",
     "seed": "node seeds/seed.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
@@ -25,5 +22,16 @@
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "prettier": "^2.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechnoPrep/tech-blog"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TechnoPrep/tech-blogissues"
+  },
+  "homepage": "https://github.com/TechnoPrep/tech-blog#readme"
 }
