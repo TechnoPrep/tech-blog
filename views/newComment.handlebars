@@ -1,0 +1,31 @@
+<div class="session" data-isloggedin="true"></div>
+
+<section class="hero is-fullheight">
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">
+      Add Comment
+    </h2>
+  </div>
+</section>
+{{#post }}
+<section class="container">
+  <div class="row col-12">
+    <div class="d-flex justify-content-center">
+    <div class="col-6 form-signin text-center">
+        <form>
+          <div class="form mb-3">
+            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Comment:</label>
+            <textarea class="form-control" id="comment" style="height: 100px" placeholder="Enter your Comment here!"></textarea>
+          </div>
+          <button data-postid="{{id}}" id="add-comment" class="w-50 btn btn-lg btn-primary mb-3" type="submit">Add Comment</button>
+          <button id="cancel-comment" class="w-50 btn btn-lg btn-danger mb-3" type="submit">Cancel</button>
+        
+          <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{{/post }}
+
+<script src="/js/newComment.js"></script>
