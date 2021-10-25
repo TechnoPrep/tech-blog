@@ -1,3 +1,9 @@
+{{#if session.loggedIn}}
+<div class="session" data-isloggedin="true"></div>
+{{else}}
+<div class="session" data-isloggedin="false"></div>
+{{/if}}
+
 <section class="hero is-fullheight">
   <div class="container px-4 py-5" id="featured-3">
     <h2 class="pb-2 border-bottom">
@@ -9,9 +15,11 @@
      
     <div class="row bg-primary text-white pt-3 rounded-top">
       <div class="feature col-6 d-flex align-items-end">
-        <h2>
-          {{post.title}}
-        </h2>
+        <a class="post-title" href="#">
+          <h2 data-postid="{{post.id}}">
+            {{post.title}}
+          </h2>
+        </a>
       </div>
       <div class="col-6 d-flex justify-content-end align-items-end">
         <h6 class="post-info" data-Date="{{post.date_created}}" data-user="{{post.user.name}}">  
@@ -30,3 +38,5 @@
 {{/if}}
   </div>
 </section>
+
+<script src="/js/home.js"></script>
