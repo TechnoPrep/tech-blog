@@ -1,0 +1,36 @@
+<div class="session" data-isloggedin="true"></div>
+
+<section class="hero is-fullheight">
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">
+      Create a Post
+    </h2>
+  </div>
+</section>
+
+<section class="container">
+  <div class="row col-12">
+    <div class="d-flex justify-content-center">
+    <div class="col-6 form-signin text-center">
+        <form>
+          <div class="form mb-3">
+            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Title:</label>
+            <input type="text" class="form-control" id="title" placeholder="Enter your Post Title here!">
+          </div>
+          <div class="form mb-3">
+            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Content:</label>
+            <textarea class="form-control" id="content" style="height: 100px" placeholder="Enter your Post Message here!"></textarea>
+          </div>
+  
+          <button id="create-post" class="w-50 btn btn-lg btn-primary mb-3" type="submit">Create Post</button>
+          <button id="cancel-post" class="w-50 btn btn-lg btn-danger mb-3" type="submit">Cancel</button>
+        
+
+          <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="/js/newPost.js"></script>
