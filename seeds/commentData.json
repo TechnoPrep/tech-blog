@@ -1,0 +1,18 @@
+[
+  {
+    "comment": "I love this!",
+    "post_id": 1,
+    "user_id": 1
+  },
+  {
+    "comment": "This is great stuff!",
+    "post_id": 1,
+    "user_id": 2
+
+  },
+  {
+    "comment": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
+    "post_id": 2,
+    "user_id": 3
+  }
+]
