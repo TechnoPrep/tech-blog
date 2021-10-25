@@ -1,0 +1,33 @@
+<div class="session" data-isloggedin="true"></div>
+
+<section class="hero is-fullheight">
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">
+      Edit Comment
+    </h2>
+  </div>
+</section>
+
+{{#comment }}
+<section class="container">
+  <div class="row col-12">
+    <div class="d-flex justify-content-center">
+    <div class="col-6 form-signin text-center">
+        <form>
+          <div class="form mb-3">
+            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Comment:</label>
+            <textarea data-postid={{post_id}} class="form-control" id="comment" style="height: 100px">{{comment}}</textarea>
+          </div>
+  
+          <button data-commentid="{{id}}" id="update-comment" class="w-50 btn btn-lg btn-primary mb-3" type="submit">Update Comment</button>
+          <button data-commentid="{{id}}" id="delete-comment" class="w-50 btn btn-lg btn-danger mb-3" type="submit">Delete Comment</button>
+        
+
+          <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{{/comment }}
+<script src="/js/editComment.js"></script>
