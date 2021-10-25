@@ -1,9 +1,20 @@
+<div class="session" data-isloggedin="true"></div>
+
 <section class="hero is-fullheight">
   <div class="container px-4 py-5" id="featured-3">
-    <h2 class="pb-2 border-bottom">
-      Dashboard
-    </h2>
-
+    <div class="row border-bottom">
+      <div class="col-6 d-flex align-items-end">
+        <h2 class="pb-2">
+          Dashboard
+        </h2>
+      </div>
+      <div class="col-6 d-flex justify-content-end">
+        <a href="#">
+          <i class="fas fa-plus fa-2x new-post"></i>
+        </a>
+        <p class="d-flex fs-4 text ps-2 pb-2"> New Post</p>
+      </div>
+    </div>
 {{#if posts.length}}
   {{#each posts as |post|}}
      
@@ -17,8 +28,8 @@
         <h6 class="post-info" data-Date="{{post.date_created}}">
       </div>
       <div class="col-1 d-flex justify-content-end">
-        <a data-postId="{{post.posts.id}}" class="edit-post" href="#">
-          <i class="far fa-edit fa-2x"></i>
+        <a href="#">
+          <i data-postid="{{post.id}}" class="edit-post far fa-edit fa-2x"></i>
         </a>
       </div>
     </div>
@@ -34,3 +45,5 @@
 {{/if}}
   </div>
 </section>
+
+<script src="/js/dashboard.js"></script>
