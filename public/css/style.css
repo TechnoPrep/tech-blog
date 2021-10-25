@@ -6,3 +6,20 @@
   padding-right: 10px;
   color: #fff;
 }
+
+.visible{
+  visibility: visible;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.post-title{
+  color: #fff;
+  text-decoration: none;
+}
+
+.post-title:hover{
+  color: lightgrey;
+}
